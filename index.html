@@ -1,12 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <div class="header-top">
+                    <img
+                        src="assets/search.png"
+                        alt="search icon"
+                        class="search-icon icon"
+                    />
+                    <input class="search-bar" type="text" />
+
+                    <div class="user">
+                        <img
+                            src="assets/notification.png"
+                            alt="notification bell"
+                            class="notification-icon icon"
+                        />
+                        <img
+                            src="assets/profile-picture.png"
+                            alt="profile picure"
+                            class="profile-picture icon"
+                        />
+                        <p class="name">Liam McAuliffe</p>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="intro">
+                        <img
+                            src="assets/profile-picture.png"
+                            alt="profile picture"
+                            class="profile-picture big-icon"
+                        />
+                        <div class="intro-text">
+                            <p class="greeting">Hi, there</p>
+                            <p class="name">Liam McAuliffe (@lmmcauliffe)</p>
+                        </div>
+                    </div>
+
+                    <div class="post-action">
+                        <button class="new">New</button>
+                        <button class="upload">Upload</button>
+                        <button class="share">Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="side-bar">
+                <div class="logo">
+                    <h1 class="logo">
+                        <img
+                            src="assets/menu.png"
+                            alt="Logo icon"
+                            class="logo-icon"
+                        />Dashboard
+                    </h1>
+                </div>
+                <div class="nav">
+                    <button class="home">
+                        <img
+                            src="assets/home.png"
+                            alt="Home icon"
+                            class="home-icon"
+                        />
+                        Home
+                    </button>
+                    <button class="profile">
+                        <img
+                            src="assets/profile.png"
+                            alt="Profile icon"
+                            class="profile-icon"
+                        />
+                        Profile
+                    </button>
+                    <button class="messages">
+                        <img
+                            src="assets/message.png"
+                            alt="Messages icon"
+                            class="messages-icon"
+                        />
+                        Messages
+                    </button>
+                    <button class="history">
+                        <img
+                            src="assets/history.png"
+                            alt="History icon"
+                            class="history-icon"
+                        />
+                        History
+                    </button>
+                    <button class="tasks">
+                        <img
+                            src="assets/tasks.png"
+                            alt="Tasks icon"
+                            class="tasks-icon"
+                        />
+                        Tasks
+                    </button>
+                    <button class="communities">
+                        <img
+                            src="assets/community.png"
+                            alt="Communities icon"
+                            class="communities-icon"
+                        />
+                        Communities
+                    </button>
+                    <div id="nav-spacer"></div>
+                    <button class="settings">
+                        <img
+                            src="assets/setting.png"
+                            alt="Settings icon"
+                            class="settings-icon"
+                        />
+                        Settings
+                    </button>
+                    <button class="support">
+                        <img
+                            src="assets/help.png"
+                            alt="Support icon"
+                            class="support-icon"
+                        />
+                        Support
+                    </button>
+                    <button class="privacy">
+                        <img
+                            src="assets/privacy.png"
+                            alt="Privacy icon"
+                            class="privacy-icon"
+                        />
+                        Privacy
+                    </button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="your-projects">
+                    <h2 class="main-header">Your Projects</h2>
+                    <div class="project-container">
+                        <div class="project">
+                            <h3 class="project-title">Super Cool Project</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Labore harum omnis aspernatur
+                                ex laudantium eveniet quae exercitationem?
+                                Repellat obcaecati est at ut, quisquam facere,
+                                cumque fugiat consequuntur necessitatibus porro
+                                nihil.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Less Cool Project</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Labore dolorum optio minus
+                                reprehenderit inventore in incidunt placeat,
+                                quidem quo repudiandae odit cum consectetur
+                                accusantium vel excepturi soluta! Velit, harum
+                                exercitationem.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Impossible App</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quos quia minus cum quaerat ab
+                                nisi minima, blanditiis vel alias. Molestiae,
+                                voluptatum neque? Nisi reiciendis cum
+                                consectetur eius, quisquam nostrum facere.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Easy Peasy App</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Fugit, eveniet reprehenderit.
+                                Praesentium labore quisquam deserunt inventore
+                                reprehenderit nam explicabo error, ipsa culpa,
+                                amet similique. Provident quae aperiam iusto
+                                ipsum vitae.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Ad Blocker</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Mollitia ex eligendi officia
+                                molestias facilis veniam excepturi ipsum,
+                                dolorum voluptatum aut, alias itaque consectetur
+                                recusandae blanditiis nobis, harum architecto
+                                molestiae eaque.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3 class="project-title">Money Maker</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Libero amet quos
+                                exercitationem labore voluptatem non odit
+                                asperiores eveniet quae, consequatur,
+                                perferendis fugit nam quod ab ex expedita
+                                quisquam atque hic.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="assets/favorite.png"
+                                    alt=""
+                                    class="favorite-icon icon"
+                                /><img
+                                    src="assets/view.png"
+                                    alt=""
+                                    class="view-icon icon"
+                                /><img
+                                    src="assets/share.png"
+                                    alt=""
+                                    class="share-icon icon"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="announcements">
+                    <h2 class="main-header">Announcements</h2>
+                    <div class="announcement-container">
+                        <div class="announcement1 announcement-item">
+                            <h4 class="announcement-header">
+                                Site Maintenance
+                            </h4>
+                            <p class="announcement">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nulla odio laborum inventore,
+                                modi maxime sit, alias aspernatur, unde officia
+                                pariatur quis vitae consectetur hic magni! Sunt
+                                inventore magni molestiae voluptas.
+                            </p>
+                        </div>
+                        <div class="announcement2 announcement-item">
+                            <h4 class="announcement-header">
+                                Community Share Day
+                            </h4>
+                            <p class="announcement">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quo ab eos, ex quia saepe nam
+                                exercitationem eligendi earum, dignissimos a
+                                aut. Numquam rem soluta dolor cumque possimus
+                                culpa? Quam, distinctio.
+                            </p>
+                        </div>
+                        <div
+                            class="announcement3 announcement-item announcement-last"
+                        >
+                            <h4 class="announcement-header">
+                                Updated Privacy Policy
+                            </h4>
+                            <p class="announcement">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perspiciatis fuga enim
+                                blanditiis, itaque iure autem atque ut
+                                recusandae quasi accusantium aut rerum debitis
+                                ipsum corporis maiores quae hic, illum
+                                repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h2 class="main-header">Trending</h2>
+                    <div class="trending-container">
+                        <div class="account1 user-account">
+                            <img
+                                src="assets/profile-picture.png"
+                                alt=""
+                                class="profile-pic"
+                            />
+                            <div class="user-info">
+                                <div class="username">@tegan</div>
+                                <div class="description">
+                                    World Peace Builder
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account2 user-account">
+                            <img
+                                src="assets/profile-picture.png"
+                                alt=""
+                                class="profile-pic"
+                            />
+                            <div class="user-info">
+                                <div class="username">@morgan</div>
+                                <div class="description">
+                                    Super Cool Project
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account3 user-account">
+                            <img
+                                src="assets/profile-picture.png"
+                                alt=""
+                                class="profile-pic"
+                            />
+                            <div class="user-info">
+                                <div class="username">@kendall</div>
+                                <div class="description">Life Changing App</div>
+                            </div>
+                        </div>
+                        <div class="account4 user-account">
+                            <img
+                                src="assets/profile-picture.png"
+                                alt=""
+                                class="profile-pic"
+                            />
+                            <div class="user-info">
+                                <div class="username">@alex</div>
+                                <div class="name">No Traffic Maker</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
